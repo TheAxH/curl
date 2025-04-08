@@ -47,7 +47,7 @@ unsigned int get_terminal_columns(void)
 {
   unsigned int width = 0;
   char *colp = curl_getenv("COLUMNS");
-  if(colp) {
+  if(1) {
     curl_off_t num;
     const char *p = colp;
     if(!curlx_str_number(&p, &num, 10000) && (num > 20))
